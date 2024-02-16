@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1 class="h1--style">Pomodoro Timer</h1>
+    <div class="container">
+      <div class="timer" id="timer">
+        <div class="timer-btn">
+          <div>
+            <button
+              id="shortsession"
+              class="btn-session btn-short-session btn-focus-session btn-timer"
+            >
+              Short Session
+            </button>
+            <button
+              id="longsession"
+              class="btn-session btn-long-session btn-timer"
+            >
+              Long Session
+            </button>
+          </div>
+          <div class="fsl-btn">
+            <button id="focus" class="btn btn-focus btn-timer">Focus</button>
+            <button id="short" class="btn btn-short">Short Break</button>
+            <button id="long" class="btn btn-long">Long Break</button>
+          </div>
+        </div>
+        <div class="time-btn-container">
+          <span id="time"></span>
+        </div>
+        <div class="btn-container">
+          <button id="btn-start" class="btn show">
+            Start <i class="fa-solid fa-play i--style"></i>
+          </button>
+          <button id="btn-pause" class="btn hide">
+            Pause <i class="fa-solid fa-pause i--style"></i>
+          </button>
+          <button id="btn-reset" class="btn hide">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="todo">
+        <h1>
+          <span
+            ><i class="fa-color1 fa-solid fa-circle"></i
+            ><i class="fa-color2 fa-solid fa-circle"></i
+            ><i class="fa-color3 fa-solid fa-circle"></i
+          ></span>
+          To-Do LIST
+          <span
+            ><i class="fa-color3 fa-solid fa-circle"></i
+            ><i class="fa-color2 fa-solid fa-circle"></i
+            ><i class="fa-color1 fa-solid fa-circle"></i
+          ></span>
+        </h1>
+        <div class="input">
+          <input
+            type="text"
+            id="input-text"
+            placeholder="Write your task here"
+          />
+          <button onclick="addTask()">add</button>
+        </div>
+        <ul id="container-list">
+          <!---<li class="checked">Task 1</li>
+          <li>Task 2</li>
+          <li>Task 3</li>-->
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

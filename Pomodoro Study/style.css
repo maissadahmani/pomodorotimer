@@ -1,0 +1,337 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(202, 130, 142);
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  gap: 60px;
+  padding: 80px;
+  justify-content: space-between;
+  background-color: rgb(202, 130, 142);
+}
+.h1--style {
+  color: rgba(163, 79, 94);
+  margin-top: 40px;
+}
+.timer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(200, 91, 111, 0.61);
+  height: 450px;
+  width: 600px;
+  border-radius: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+.timer-btn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.btn {
+  width: 100px;
+  height: 35px;
+  font-size: 15px;
+  font-weight: 900;
+  background-color: rgba(163, 79, 94, 0.794); /*rgb(187, 68, 90)*/
+  color: rgb(249, 210, 216);
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.btn-session {
+  width: 120px;
+  height: 45px;
+  font-size: 15px;
+  font-weight: 900;
+  background-color: rgb(198, 78, 100);
+  color: rgb(249, 210, 216);
+  border-radius: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.btn-focus {
+  background-color: rgb(248, 192, 201);
+  color: rgba(163, 79, 94); /*rgb(198, 78, 100)*/
+}
+.btn-focus-session {
+  background-color: rgb(249, 210, 216);
+  color: rgb(198, 78, 100);
+}
+.btn:hover,
+.btn-session:hover {
+  border: 1px solid rgb(249, 210, 216);
+  box-shadow: 0.1em 0.1em 1em rgba(249, 210, 216, 0.5);
+}
+#btn-reset {
+  height: 35px;
+  width: 40px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.i--style {
+  font-size: 15px;
+  padding-left: 5px;
+}
+.btn-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 25px;
+}
+#time {
+  text-align: center;
+  color: rgb(249, 210, 216);
+  font-size: 90px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.todo {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgb(244, 190, 221);
+  background-color: rgb(249, 210, 216);
+  border-radius: 20px;
+  width: 600px;
+  height: 450px;
+  padding: 10px;
+}
+
+.todo h1 {
+  color: rgb(198, 78, 100);
+  /*color: rgb(204, 125, 138);*/
+  align-self: center;
+  margin: 10px;
+  padding-bottom: 15px;
+}
+/* h1::before { 
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(204, 135, 142);
+    border-radius: 50px;
+    margin-right: 15px;
+  } */
+.input {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  gap: 5px;
+}
+#input-text {
+  flex: 1;
+  border: 1px solid rgb(204, 125, 138);
+  border-radius: 15px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+#input-text:focus {
+  border: 2px solid rgb(204, 125, 138);
+  outline: none;
+}
+
+button {
+  border: none;
+  border-radius: 15px;
+  height: 40px;
+  width: 60px;
+  background: rgb(204, 125, 138);
+  cursor: pointer;
+  font-size: 15px;
+}
+button:hover {
+  box-shadow: 0.1em 0.1em 0.7em rgba(150, 41, 112, 0.5);
+}
+
+.container-list {
+  background-color: rgb(233, 164, 175);
+  padding: 10px;
+  color: rgb(218, 142, 154);
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  font-size: 19px;
+  font-weight: 500;
+  padding: 10px 5px 10px 40px;
+  user-select: none;
+  cursor: pointer;
+}
+
+ul li::before {
+  position: absolute;
+  left: 10px;
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border: 1px solid #555;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  content: "\2713";
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(204, 135, 142);
+  width: 18px;
+  height: 18px;
+  border: 1px solid #555;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+ul li span {
+  position: absolute;
+  color: #555;
+  font-size: 20px;
+  right: 0;
+  bottom: 3px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50px;
+}
+ul li span:hover {
+  background-color: pink;
+}
+
+.fa-color3 {
+  color: rgb(193, 119, 131);
+  font-size: 23px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.fa-color2 {
+  color: rgb(180, 111, 123);
+  font-size: 25px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.fa-color1 {
+  color: rgb(168, 103, 114);
+  font-size: 28px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+::selection {
+  color: rgb(198, 78, 100);
+  background-color: pink;
+}
+@media (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(202, 130, 142);
+  }
+  .timer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(200, 91, 111);
+    border-radius: 10px;
+    width: auto;
+    min-width: 300px;
+    height: auto;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+  }
+
+  .todo {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(244, 190, 221);
+    background-color: rgb(233, 164, 175);
+    width: auto;
+    height: auto;
+    min-width: 300px;
+    border-radius: 20px;
+  }
+  #time {
+    text-align: center;
+    color: rgb(249, 210, 216);
+    font-size: 45px;
+    font-weight: 400;
+    font-family: sans-serif;
+  }
+  .btn {
+    width: 90px;
+    height: 35px;
+    font-size: 13px;
+    font-weight: 900;
+    background-color: rgba(163, 79, 94, 0.794); /*rgb(187, 68, 90)*/
+    color: rgb(249, 210, 216);
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .btn-session {
+    width: 100px;
+    height: 45px;
+    font-size: 13px;
+    font-weight: 900;
+    background-color: rgb(198, 78, 100);
+    color: rgb(249, 210, 216);
+    border-radius: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .btn-focus {
+    background-color: rgb(248, 192, 201);
+    color: rgba(163, 79, 94); /*rgb(198, 78, 100)*/
+  }
+  .btn-focus-session {
+    background-color: rgb(249, 210, 216);
+    color: rgb(198, 78, 100);
+  }
+  .btn:hover,
+  .btn-session:hover {
+    border: 1px solid rgb(249, 210, 216);
+    box-shadow: 0.1em 0.1em 1em rgba(249, 210, 216, 0.5);
+  }
+  .fsl-btn {
+    margin-left: 32px;
+  }
+}
