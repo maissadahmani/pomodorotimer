@@ -26,10 +26,10 @@ Tasks can be checked off and removed from the list.
 
 This Pomodoro Timer App is designed to enhance productivity and focus by providing customizable work and break intervals, along with task management capabilities.
 
-##TECH STACK
-👾 HTML
-👾 CSS
-👾 Java Script
+## TECH STACK
+1. 👾 HTML
+2. 👾 CSS
+3. 👾 Java Script
 
 
 ## Beschreibung-Deutsch
