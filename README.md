@@ -1,5 +1,7 @@
 # Pomodoro Timer App with Task Management
 
+<img width="1414" alt="PomodoroTimer" src="https://github.com/maissadahmani/pomodorotimer/assets/160016532/125d4f1f-519c-4a46-bb02-3f473a0922eb">
+
 Introducing my dynamic Pomodoro Timer app, designed to supercharge your productivity with its vibrant features! It is a time and task management App that aims to optimize focus and efficiency while studying or working on a task.
 This App is inspired by the Pomodoro Technique developed by Francesco Cirillo.
 
@@ -23,6 +25,11 @@ Users can add tasks to the To-Do List.
 Tasks can be checked off and removed from the list.
 
 This Pomodoro Timer App is designed to enhance productivity and focus by providing customizable work and break intervals, along with task management capabilities.
+
+##TECH STACK
+👾 HTML
+👾 CSS
+👾 Java Script
 
 
 ## Beschreibung-Deutsch
